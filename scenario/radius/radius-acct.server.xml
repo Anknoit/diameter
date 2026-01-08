@@ -8,7 +8,6 @@
   <!-- Receive Accounting-Request (Start) -->
   <receive channel="trans-ip-v4">
     <Message name="Accounting-Request">
-      <Attribute name="Acct-Session-Id" value="na"> </Attribute>
       <Attribute name="Acct-Status-Type" value="1"> </Attribute> <!-- Start -->
     </Message>
     <action>
@@ -37,7 +36,6 @@
   <!-- Receive Accounting-Request (Stop) -->
   <receive channel="trans-ip-v4">
     <Message name="Accounting-Request">
-      <Attribute name="Acct-Session-Id" value="na"> </Attribute>
       <Attribute name="Acct-Status-Type" value="2"> </Attribute> <!-- Stop -->
     </Message>
     <action>

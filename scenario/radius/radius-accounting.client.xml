@@ -33,9 +33,24 @@
     </action>
     <Message name="Accounting-Request">
       <Attribute name="Acct-Session-Id" value="value_is_replaced"> </Attribute>
-      <!-- 1 stand for Start -->
+      <!-- 1 stands for Start -->
       <Attribute name="Acct-Status-Type" value="1"> </Attribute>
-      <Attribute name="NAS-Identifier" value="ims.hpintelco.org"> </Attribute>
+      <Attribute name="Acct-Terminate-Cause" value="1"> </Attribute> <!-- Admin-Reset -->
+      <Attribute name="NAS-IP-Address" value="2130706433"> </Attribute> <!-- 127.0.0.1 -->
+      <Attribute name="Acct-Delay-Time" value="0"> </Attribute>
+      <Attribute name="User-Name" value="S4534553635"> </Attribute>
+      <Attribute name="Service-Type" value="9"> </Attribute> <!-- Callback-NAS-Prompt -->
+      <Attribute name="Framed-Protocol" value="1"> </Attribute> <!-- PPP -->
+      <Attribute name="Framed-IP-Address" value="2887057256"> </Attribute> <!-- 172.23.17.104 -->
+      <Attribute name="Framed-IP-Netmask" value="4294967040"> </Attribute> <!-- 255.255.255.240 -->
+      <Attribute name="NAS-Identifier" value="bgl-cpf-dell-bgl-01"> </Attribute>
+      <Attribute name="Acct-Multi-Session-Id" value="Y000000D3BBD4A04C000000D2"> </Attribute>
+      <Attribute name="Acct-Authentic" value="1"> </Attribute> <!-- RADIUS -->
+      <Attribute name="Acct-Session-Time" value="990"> </Attribute>
+      <Attribute name="Event-Timestamp" value="1682725133"> </Attribute>
+      <Attribute name="Acct-Input-Octets" value="6990"> </Attribute>
+      <Attribute name="Acct-Output-Octets" value="7990"> </Attribute>
+      <Attribute name="Calling-Station-Id" value="lag-10:3051.148"> </Attribute>
     </Message>
     <action>
       <store name="ACCT_SES_ID" entity="Acct-Session-Id"></store>
@@ -72,9 +87,24 @@
     </action>
     <Message name="Accounting-Request">
       <Attribute name="Acct-Session-Id" value="value_is_replaced"> </Attribute>
-      <!-- 2 stand for Stop -->
+      <!-- 2 stands for Stop -->
       <Attribute name="Acct-Status-Type" value="2"> </Attribute>
-      <Attribute name="NAS-Identifier" value="ims.hpintelco.org"> </Attribute>
+      <Attribute name="Acct-Terminate-Cause" value="1"> </Attribute> <!-- Admin-Reset -->
+      <Attribute name="NAS-IP-Address" value="2130706433"> </Attribute> <!-- 127.0.0.1 -->
+      <Attribute name="Acct-Delay-Time" value="0"> </Attribute>
+      <Attribute name="User-Name" value="S4534553635"> </Attribute>
+      <Attribute name="Service-Type" value="9"> </Attribute> <!-- Callback-NAS-Prompt -->
+      <Attribute name="Framed-Protocol" value="1"> </Attribute> <!-- PPP -->
+      <Attribute name="Framed-IP-Address" value="2887057256"> </Attribute> <!-- 172.23.17.104 -->
+      <Attribute name="Framed-IP-Netmask" value="4294967040"> </Attribute> <!-- 255.255.255.240 -->
+      <Attribute name="NAS-Identifier" value="bgl-cpf-dell-bgl-01"> </Attribute>
+      <Attribute name="Acct-Multi-Session-Id" value="Y000000D3BBD4A04C000000D2"> </Attribute>
+      <Attribute name="Acct-Authentic" value="1"> </Attribute> <!-- RADIUS -->
+      <Attribute name="Acct-Session-Time" value="1490"> </Attribute> <!-- Increased from Start -->
+      <Attribute name="Event-Timestamp" value="1682725633"> </Attribute> <!-- 500 seconds later -->
+      <Attribute name="Acct-Input-Octets" value="13980"> </Attribute> <!-- Doubled from Start -->
+      <Attribute name="Acct-Output-Octets" value="15980"> </Attribute> <!-- Doubled from Start -->
+      <Attribute name="Calling-Station-Id" value="lag-10:3051.148"> </Attribute>
     </Message>
     <action>
       <start-timer></start-timer>

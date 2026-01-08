@@ -13,7 +13,7 @@
     name="trans-ip-v4"
     protocol="radius-v1"
     transport="trans-ip-v4"
-    open-args="mode=client;dest=156.238.98.73:1813;source=0.0.0.0:0">
+    open-args="mode=client;dest=127.0.0.1:1813;source=0.0.0.0:0">
   </define>
   
   <define entity="traffic-param" name="call-rate" value="1"></define>
