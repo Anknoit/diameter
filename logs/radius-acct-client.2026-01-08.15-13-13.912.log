@@ -1,0 +1,494 @@
+2026-01-08.15:13:13.914|A|START log
+2026-01-08.15:13:13.914|A|Platform use LITTLE_ENDIAN coding
+2026-01-08.15:13:13.914|A|Integer32 Type size is: 8
+2026-01-08.15:13:13.914|A|Integer64 Type size is: 8
+2026-01-08.15:13:13.914|A|Configuration data:
+                       | |option_log_file  [logs/radius-acct-client.log]
+                       | |option_conf_file [config/radius/conf.acct-client.xml]
+                       | |option_dico_file [config/radius/radius-dictionary.xml]
+                       | |option_scen_file [scenario/radius/radius-accounting.client.xml]
+                       | |log_stat_file    [../logs/client-stat.csv]
+                       | |option_log_level [ET]
+                       | |option_bg_mode   [false]
+                       | |call_rate        [1]
+                       | |burst_limit      [0]
+                       | |max_send         [200]
+                       | |max_receive      [200]
+                       | |select_timeout   [50]
+                       | |max_simult_calls [2000]
+                       | |call_timeout_ms  [10000]
+                       | |msg_buffer_size  [4096]
+                       | |display_period   [1]
+                       | |log_stat_period  [1]
+                       | |resp_time_repart [50,75,100,150,300,5000]
+                       | |number_calls     [0]
+                       | |notimelog        [false]
+                       | |msg check        [false]
+                       | |msg check mask   [P]
+                       | |check behaviour  [warning]
+                       | |call rate scale  [1]
+                       | |model traffic    [best-effort]
+                       | |external data file    [none]
+                       | |external data select  [sequential]
+2026-01-08.15:13:13.917|A|PID [773822]
+2026-01-08.15:13:13.967|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:13.967|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 1]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 31 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:13.967|T|Send error on call with session-id [0]
+2026-01-08.15:13:13.968|T|Execution error on call with session-id [0]
+2026-01-08.15:13:14.921|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:14.921|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 2]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 32 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:14.921|T|Send error on call with session-id [0]
+2026-01-08.15:13:14.921|T|Execution error on call with session-id [0]
+2026-01-08.15:13:15.923|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:15.923|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 3]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 33 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:15.923|T|Send error on call with session-id [0]
+2026-01-08.15:13:15.923|T|Execution error on call with session-id [0]
+2026-01-08.15:13:16.927|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:16.927|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 4]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 34 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:16.927|T|Send error on call with session-id [0]
+2026-01-08.15:13:16.927|T|Execution error on call with session-id [0]
+2026-01-08.15:13:17.930|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:17.930|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 5]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 35 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:17.930|T|Send error on call with session-id [0]
+2026-01-08.15:13:17.930|T|Execution error on call with session-id [0]
+2026-01-08.15:13:18.934|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:18.934|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 6]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 36 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:18.934|T|Send error on call with session-id [0]
+2026-01-08.15:13:18.934|T|Execution error on call with session-id [0]
+2026-01-08.15:13:19.937|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:19.937|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 7]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 37 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:19.937|T|Send error on call with session-id [0]
+2026-01-08.15:13:19.937|T|Execution error on call with session-id [0]
+2026-01-08.15:13:20.939|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:20.939|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 8]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 38 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:20.939|T|Send error on call with session-id [0]
+2026-01-08.15:13:20.939|T|Execution error on call with session-id [0]
+2026-01-08.15:13:21.942|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:21.942|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 9]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 39 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:21.942|T|Send error on call with session-id [0]
+2026-01-08.15:13:21.942|T|Execution error on call with session-id [0]
+2026-01-08.15:13:22.944|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:22.944|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 10]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 31 30 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:22.944|T|Send error on call with session-id [0]
+2026-01-08.15:13:22.944|T|Execution error on call with session-id [0]
+2026-01-08.15:13:23.947|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:23.947|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 11]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 31 31 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:23.947|T|Send error on call with session-id [0]
+2026-01-08.15:13:23.947|T|Execution error on call with session-id [0]
+2026-01-08.15:13:24.951|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:24.951|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 12]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 31 32 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:24.951|T|Send error on call with session-id [0]
+2026-01-08.15:13:24.951|T|Execution error on call with session-id [0]
+2026-01-08.15:13:25.954|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:25.955|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 13]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 31 33 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:25.955|T|Send error on call with session-id [0]
+2026-01-08.15:13:25.955|T|Execution error on call with session-id [0]
+2026-01-08.15:13:26.957|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:26.957|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 14]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 31 34 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:26.957|T|Send error on call with session-id [0]
+2026-01-08.15:13:26.957|T|Execution error on call with session-id [0]
+2026-01-08.15:13:27.960|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:27.960|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 15]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 31 35 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:27.960|T|Send error on call with session-id [0]
+2026-01-08.15:13:27.960|T|Execution error on call with session-id [0]
+2026-01-08.15:13:28.963|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:28.963|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 16]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 31 36 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:28.963|T|Send error on call with session-id [0]
+2026-01-08.15:13:28.963|T|Execution error on call with session-id [0]
+2026-01-08.15:13:29.967|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:29.967|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 17]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 31 37 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:29.967|T|Send error on call with session-id [0]
+2026-01-08.15:13:29.967|T|Execution error on call with session-id [0]
+2026-01-08.15:13:30.919|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:30.920|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 18]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 31 38 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:30.920|T|Send error on call with session-id [0]
+2026-01-08.15:13:30.920|T|Execution error on call with session-id [0]
+2026-01-08.15:13:31.923|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:31.923|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 19]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 31 39 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:31.923|T|Send error on call with session-id [0]
+2026-01-08.15:13:31.923|T|Execution error on call with session-id [0]
+2026-01-08.15:13:32.926|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:32.926|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 20]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 32 30 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:32.926|T|Send error on call with session-id [0]
+2026-01-08.15:13:32.926|T|Execution error on call with session-id [0]
+2026-01-08.15:13:33.930|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:33.930|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 21]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 32 31 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:33.930|T|Send error on call with session-id [0]
+2026-01-08.15:13:33.930|T|Execution error on call with session-id [0]
+2026-01-08.15:13:34.932|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:34.933|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 22]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 32 32 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:34.933|T|Send error on call with session-id [0]
+2026-01-08.15:13:34.933|T|Execution error on call with session-id [0]
+2026-01-08.15:13:35.937|E|The value of the field [Authenticator] is not set
+2026-01-08.15:13:35.937|T|Error while sending [[Accounting-Request
+                       |M|[Code] = [ 4]
+                       |M|[Identifier] = [ 23]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 32 33 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 69 6d 73 2e 68 70 69 6e 74 65 6c 63 6f 2e 6f 72 
+                       |M| 67 
+                       |M| ]
+                       |M|]]
+2026-01-08.15:13:35.937|T|Send error on call with session-id [0]
+2026-01-08.15:13:35.937|T|Execution error on call with session-id [0]
+2026-01-08.15:13:37.560|A|STOP  log

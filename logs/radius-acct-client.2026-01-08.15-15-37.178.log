@@ -1,0 +1,118 @@
+2026-01-08.15:15:37.179|A|START log
+2026-01-08.15:15:37.179|A|Platform use LITTLE_ENDIAN coding
+2026-01-08.15:15:37.179|A|Integer32 Type size is: 8
+2026-01-08.15:15:37.179|A|Integer64 Type size is: 8
+2026-01-08.15:15:37.179|A|Configuration data:
+                       | |option_log_file  [logs/radius-acct-client.log]
+                       | |option_conf_file [config/radius/conf.acct-client.xml]
+                       | |option_dico_file [config/radius/radius-dictionary.xml]
+                       | |option_scen_file [scenario/radius/radius-accounting.client.xml]
+                       | |log_stat_file    [../logs/client-stat.csv]
+                       | |option_log_level [ET]
+                       | |option_bg_mode   [false]
+                       | |call_rate        [1]
+                       | |burst_limit      [0]
+                       | |max_send         [200]
+                       | |max_receive      [200]
+                       | |select_timeout   [50]
+                       | |max_simult_calls [2000]
+                       | |call_timeout_ms  [10000]
+                       | |msg_buffer_size  [4096]
+                       | |display_period   [1]
+                       | |log_stat_period  [1]
+                       | |resp_time_repart [50,75,100,150,300,5000]
+                       | |number_calls     [0]
+                       | |notimelog        [false]
+                       | |msg check        [false]
+                       | |msg check mask   [P]
+                       | |check behaviour  [warning]
+                       | |call rate scale  [1]
+                       | |model traffic    [best-effort]
+                       | |external data file    [none]
+                       | |external data select  [sequential]
+2026-01-08.15:15:37.180|A|PID [777451]
+2026-01-08.15:15:37.733|E|Unexpexted message that doesn't match the scenario.
+2026-01-08.15:15:37.733|T|Unexpected (no scenario found) call with session-id [2]
+2026-01-08.15:15:37.733|T|Unexpected message received [ [Accounting-Response
+                       |M|[Code] = [ 5]
+                       |M|[Identifier] = [ 2]
+                       |M|[Length] = [ 32]
+                       |M|[Authenticator] = [  
+                       |M|46 45 44 43 42 41 39 38 37 36 35 34 33 32 31 30 
+                       |M|]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 31 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M|]
+                       | |]
+2026-01-08.15:15:38.687|E|Unexpexted message that doesn't match the scenario.
+2026-01-08.15:15:38.687|T|Unexpected (no scenario found) call with session-id [4]
+2026-01-08.15:15:38.687|T|Unexpected message received [ [Accounting-Response
+                       |M|[Code] = [ 5]
+                       |M|[Identifier] = [ 4]
+                       |M|[Length] = [ 32]
+                       |M|[Authenticator] = [  
+                       |M|46 45 44 43 42 41 39 38 37 36 35 34 33 32 31 30 
+                       |M|]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 32 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M|]
+                       | |]
+2026-01-08.15:15:39.692|E|Unexpexted message that doesn't match the scenario.
+2026-01-08.15:15:39.692|T|Unexpected (no scenario found) call with session-id [6]
+2026-01-08.15:15:39.692|T|Unexpected message received [ [Accounting-Response
+                       |M|[Code] = [ 5]
+                       |M|[Identifier] = [ 6]
+                       |M|[Length] = [ 32]
+                       |M|[Authenticator] = [  
+                       |M|46 45 44 43 42 41 39 38 37 36 35 34 33 32 31 30 
+                       |M|]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 33 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M|]
+                       | |]
+2026-01-08.15:15:40.695|E|Unexpexted message that doesn't match the scenario.
+2026-01-08.15:15:40.695|T|Unexpected (no scenario found) call with session-id [8]
+2026-01-08.15:15:40.695|T|Unexpected message received [ [Accounting-Response
+                       |M|[Code] = [ 5]
+                       |M|[Identifier] = [ 8]
+                       |M|[Length] = [ 32]
+                       |M|[Authenticator] = [  
+                       |M|46 45 44 43 42 41 39 38 37 36 35 34 33 32 31 30 
+                       |M|]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 34 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M|]
+                       | |]
+2026-01-08.15:15:41.697|E|Unexpexted message that doesn't match the scenario.
+2026-01-08.15:15:41.697|T|Unexpected (no scenario found) call with session-id [10]
+2026-01-08.15:15:41.697|T|Unexpected message received [ [Accounting-Response
+                       |M|[Code] = [ 5]
+                       |M|[Identifier] = [ 10]
+                       |M|[Length] = [ 32]
+                       |M|[Authenticator] = [  
+                       |M|46 45 44 43 42 41 39 38 37 36 35 34 33 32 31 30 
+                       |M|]
+                       |M| [Acct-Session-Id
+                       |M| (Attr-Type = 44)] = [
+                       |M| 35 
+                       |M| ]
+                       |M| [Acct-Status-Type
+                       |M| (Attr-Type = 40)] = [1]
+                       |M|]
+                       | |]

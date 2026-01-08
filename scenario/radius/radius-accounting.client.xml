@@ -26,8 +26,9 @@
       <set-value name="Identifier" 
                  format="$(identifier-counter)"></set-value>
 
-      <!-- This field must not be use with a true value -->
-      <restore-from-external field="0" entity="Authenticator"></restore-from-external> 
+      <!-- Set authenticator value -->
+      <set-value name="Authenticator" 
+                 format="0123456789ABCDEF0123456789ABCDEF"></set-value> 
 
     </action>
     <Message name="Accounting-Request">
@@ -63,8 +64,9 @@
       <set-value name="Identifier" 
                  format="$(identifier-counter)"></set-value>
 
-      <!-- This field must not be use with a true value -->
-      <restore-from-external field="1" entity="Authenticator"></restore-from-external> 
+      <!-- Set authenticator value -->
+      <set-value name="Authenticator" 
+                 format="FEDCBA9876543210FEDCBA9876543210"></set-value> 
 
       <restore name="ACCT_SES_ID" entity="Acct-Session-Id"></restore>
     </action>

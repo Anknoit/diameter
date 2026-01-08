@@ -1,0 +1,7 @@
+2026-01-08.14:58:05.760|A|START log
+2026-01-08.14:58:05.760|E|Incorrect value format for [value_is_replaced] - Integer expected
+2026-01-08.14:58:05.760|E|Bad format for [value_is_replaced]
+2026-01-08.14:58:05.760|E|Error while creating message
+2026-01-08.14:58:05.760|E|Bad scenario definition
+2026-01-08.14:58:05.760|E|Traffic scenario error
+2026-01-08.14:58:05.760|A|STOP  log

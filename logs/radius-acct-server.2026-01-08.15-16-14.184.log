@@ -1,0 +1,58 @@
+2026-01-08.15:16:14.185|A|START log
+2026-01-08.15:16:14.186|A|Platform use LITTLE_ENDIAN coding
+2026-01-08.15:16:14.186|A|Integer32 Type size is: 8
+2026-01-08.15:16:14.186|A|Integer64 Type size is: 8
+2026-01-08.15:16:14.186|A|Configuration data:
+                       | |option_log_file  [logs/radius-acct-server.log]
+                       | |option_conf_file [config/radius/conf.acct-server.xml]
+                       | |option_dico_file [config/radius/radius-dictionary.xml]
+                       | |option_scen_file [scenario/radius/radius-acct.server.xml]
+                       | |log_stat_file    [../logs/server-stat.csv]
+                       | |option_log_level [ET]
+                       | |option_bg_mode   [false]
+                       | |call_rate        [0]
+                       | |burst_limit      [0]
+                       | |max_send         [2000]
+                       | |max_receive      [2000]
+                       | |select_timeout   [50]
+                       | |max_simult_calls [2000]
+                       | |call_timeout_ms  [10000]
+                       | |msg_buffer_size  [4096]
+                       | |display_period   [1]
+                       | |log_stat_period  [1]
+                       | |resp_time_repart [50,75,100,150,300,5000]
+                       | |number_calls     [0]
+                       | |notimelog        [false]
+                       | |msg check        [false]
+                       | |msg check mask   [P]
+                       | |check behaviour  [warning]
+                       | |call rate scale  [1]
+                       | |model traffic    [best-effort]
+                       | |external data file    [none]
+                       | |external data select  [sequential]
+2026-01-08.15:16:14.187|A|PID [778792]
+2026-01-08.15:16:25.096|T|Refused (new) call with session-id [15]
+2026-01-08.15:16:26.100|T|Refused (new) call with session-id [16]
+2026-01-08.15:16:27.104|T|Refused (new) call with session-id [17]
+2026-01-08.15:16:28.111|T|Refused (new) call with session-id [18]
+2026-01-08.15:16:28.161|T|Call timeout detected
+2026-01-08.15:16:28.663|T|Call timeout detected
+2026-01-08.15:16:29.065|T|Refused (new) call with session-id [19]
+2026-01-08.15:16:29.115|T|Call timeout detected
+2026-01-08.15:16:29.617|T|Call timeout detected
+2026-01-08.15:16:30.069|T|Refused (new) call with session-id [20]
+2026-01-08.15:16:30.119|T|Call timeout detected
+2026-01-08.15:16:30.621|T|Call timeout detected
+2026-01-08.15:16:31.072|T|Refused (new) call with session-id [21]
+2026-01-08.15:16:31.123|T|Call timeout detected
+2026-01-08.15:16:31.624|T|Call timeout detected
+2026-01-08.15:16:32.076|T|Refused (new) call with session-id [22]
+2026-01-08.15:16:32.126|T|Call timeout detected
+2026-01-08.15:16:32.628|T|Call timeout detected
+2026-01-08.15:16:33.081|T|Refused (new) call with session-id [23]
+2026-01-08.15:16:33.131|T|Call timeout detected
+2026-01-08.15:16:33.634|T|Call timeout detected
+2026-01-08.15:16:34.086|T|Refused (new) call with session-id [24]
+2026-01-08.15:16:34.136|T|Call timeout detected
+2026-01-08.15:16:34.638|T|Call timeout detected
+2026-01-08.15:16:35.210|A|STOP  log

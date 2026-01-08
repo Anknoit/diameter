@@ -1,0 +1,5 @@
+2026-01-08.15:12:03.408|A|START log
+2026-01-08.15:12:03.408|E|Using restore-from-external action with no external data defined
+2026-01-08.15:12:03.408|E|Bad scenario definition
+2026-01-08.15:12:03.408|E|Traffic scenario error
+2026-01-08.15:12:03.408|A|STOP  log

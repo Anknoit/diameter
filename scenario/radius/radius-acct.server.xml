@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<scenario name="RADIUS Accounting Server Scenario">
+
+<!-- Traffic Scenario -->
+<traffic>
+
+  <!-- Receive Accounting-Request (Start) -->
+  <receive channel="trans-ip-v4">
+    <Message name="Accounting-Request">
+      <Attribute name="Acct-Session-Id" value="na"> </Attribute>
+      <Attribute name="Acct-Status-Type" value="1"> </Attribute> <!-- Start -->
+    </Message>
+    <action>
+      <!-- Store received values for response -->
+      <store name="ACCT_SES_ID" entity="Acct-Session-Id"></store>
+      <store name="IDENTIFIER" entity="Identifier"></store>
+    </action>
+  </receive>
+  
+  <!-- Send Accounting-Response (Start) -->
+  <send channel="trans-ip-v4">
+    <action>
+      <!-- Restore identifier from request -->
+      <restore name="IDENTIFIER" entity="Identifier"></restore>
+      <restore name="ACCT_SES_ID" entity="Acct-Session-Id"></restore>
+      <!-- Set response authenticator -->
+      <set-value name="Authenticator" 
+                 format="FEDCBA9876543210FEDCBA9876543210"></set-value>
+    </action>
+    <Message name="Accounting-Response">
+      <Attribute name="Acct-Session-Id" value="value_is_replaced"> </Attribute>
+      <Attribute name="Acct-Status-Type" value="1"> </Attribute> <!-- Echo Start -->
+    </Message>
+  </send>
+
+  <!-- Receive Accounting-Request (Stop) -->
+  <receive channel="trans-ip-v4">
+    <Message name="Accounting-Request">
+      <Attribute name="Acct-Session-Id" value="na"> </Attribute>
+      <Attribute name="Acct-Status-Type" value="2"> </Attribute> <!-- Stop -->
+    </Message>
+    <action>
+      <!-- Store received values for response -->
+      <store name="ACCT_SES_ID" entity="Acct-Session-Id"></store>
+      <store name="IDENTIFIER" entity="Identifier"></store>
+    </action>
+  </receive>
+  
+  <!-- Send Accounting-Response (Stop) -->
+  <send channel="trans-ip-v4">
+    <action>
+      <!-- Restore identifier from request -->
+      <restore name="IDENTIFIER" entity="Identifier"></restore>
+      <restore name="ACCT_SES_ID" entity="Acct-Session-Id"></restore>
+      <!-- Set response authenticator -->
+      <set-value name="Authenticator" 
+                 format="FEDCBA9876543210FEDCBA9876543210"></set-value>
+    </action>
+    <Message name="Accounting-Response">
+      <Attribute name="Acct-Session-Id" value="value_is_replaced"> </Attribute>
+      <Attribute name="Acct-Status-Type" value="2"> </Attribute> <!-- Echo Stop -->
+    </Message>
+  </send>
+
+</traffic>
+  
+</scenario>
