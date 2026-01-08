@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<scenario name="RADIUS Authentication Server Scenario">
+
+<!-- Traffic Scenario -->
+<traffic>
+
+  <!-- Receive Access-Request -->
+  <receive channel="trans-ip-v4">
+    <Message name="Access-Request">
+      <Attribute name="User-Name" value="na"> </Attribute>
+      <Attribute name="User-Password" value="na"> </Attribute>
+    </Message>
+    <action>
+      <!-- Store received values for response -->
+      <store name="USERNAME" entity="User-Name"></store>
+      <store name="IDENTIFIER" entity="Identifier"></store>
+    </action>
+  </receive>
+  
+  <!-- Send Access-Accept -->
+  <send channel="trans-ip-v4">
+    <action>
+      <!-- Restore identifier from request -->
+      <restore name="IDENTIFIER" entity="Identifier"></restore>
+      <!-- Set response authenticator -->
+      <set-value name="Authenticator" 
+                 format="FEDCBA9876543210FEDCBA9876543210"></set-value>
+    </action>
+    <Message name="Access-Accept">
+      <Attribute name="Service-Type" value="2"> </Attribute> <!-- Framed -->
+      <Attribute name="Framed-IP-Address" value="167772161"> </Attribute> <!-- 10.0.0.1 -->
+      <Attribute name="Framed-IP-Netmask" value="4294967040"> </Attribute> <!-- 255.255.255.0 -->
+      <Attribute name="Framed-MTU" value="1500"> </Attribute>
+      <Attribute name="Session-Timeout" value="3600"> </Attribute>
+      <Attribute name="Idle-Timeout" value="600"> </Attribute>
+      <Attribute name="Reply-Message" value="Welcome! Authentication successful."> </Attribute>
+    </Message>
+  </send>
+
+</traffic>
+  
+</scenario>

@@ -1,0 +1,376 @@
+2026-01-07.18:36:08.863|A|START log
+2026-01-07.18:36:08.863|A|Platform use LITTLE_ENDIAN coding
+2026-01-07.18:36:08.863|A|Integer32 Type size is: 8
+2026-01-07.18:36:08.863|A|Integer64 Type size is: 8
+2026-01-07.18:36:08.863|A|Configuration data:
+                       | |option_log_file  [logs/radius-auth-client.log]
+                       | |option_conf_file [config/radius/conf.auth-client.xml]
+                       | |option_dico_file [config/radius/radius-dictionary.xml]
+                       | |option_scen_file [scenario/radius/radius-auth.client.xml]
+                       | |log_stat_file    [../logs/radius-auth-client-stat.csv]
+                       | |option_log_level [ET]
+                       | |option_bg_mode   [false]
+                       | |call_rate        [1]
+                       | |burst_limit      [0]
+                       | |max_send         [200]
+                       | |max_receive      [200]
+                       | |select_timeout   [50]
+                       | |max_simult_calls [2000]
+                       | |call_timeout_ms  [10000]
+                       | |msg_buffer_size  [4096]
+                       | |display_period   [1]
+                       | |log_stat_period  [1]
+                       | |resp_time_repart [50,75,100,150,300,5000]
+                       | |number_calls     [0]
+                       | |notimelog        [false]
+                       | |msg check        [false]
+                       | |msg check mask   [P]
+                       | |check behaviour  [warning]
+                       | |call rate scale  [1]
+                       | |model traffic    [best-effort]
+                       | |external data file    [none]
+                       | |external data select  [sequential]
+2026-01-07.18:36:08.867|A|PID [518275]
+2026-01-07.18:36:08.918|E|The value of the field [Authenticator] is not set
+2026-01-07.18:36:08.918|T|Error while sending [[Access-Request
+                       |M|[Code] = [ 1]
+                       |M|[Identifier] = [ 1]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [User-Name
+                       |M| (Attr-Type = 1)] = [
+                       |M| 75 73 65 72 31 30 30 31 40 65 78 61 6d 70 6c 65 
+                       |M| 2e 63 6f 6d 
+                       |M| ]
+                       |M| [User-Password
+                       |M| (Attr-Type = 2)] = [
+                       |M| 70 61 73 73 77 6f 72 64 31 32 33 
+                       |M| ]
+                       |M| [NAS-IP-Address
+                       |M| (Attr-Type = 4)] = [2130706433]
+                       |M| [NAS-Port
+                       |M| (Attr-Type = 5)] = [0]
+                       |M| [Service-Type
+                       |M| (Attr-Type = 6)] = [2]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 73 65 61 67 75 6c 6c 2d 74 65 73 74 2d 6e 61 73 
+                       |M| ]
+                       |M| [Called-Station-Id
+                       |M| (Attr-Type = 30)] = [
+                       |M| 30 30 2d 31 31 2d 32 32 2d 33 33 2d 34 34 2d 35 
+                       |M| 35 
+                       |M| ]
+                       |M| [Calling-Station-Id
+                       |M| (Attr-Type = 31)] = [
+                       |M| 41 41 2d 42 42 2d 43 43 2d 44 44 2d 45 45 2d 46 
+                       |M| 46 
+                       |M| ]
+                       |M|]]
+2026-01-07.18:36:08.919|T|Send error on call with session-id [0]
+2026-01-07.18:36:08.919|T|Execution error on call with session-id [0]
+2026-01-07.18:36:09.873|E|The value of the field [Authenticator] is not set
+2026-01-07.18:36:09.873|T|Error while sending [[Access-Request
+                       |M|[Code] = [ 1]
+                       |M|[Identifier] = [ 2]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [User-Name
+                       |M| (Attr-Type = 1)] = [
+                       |M| 75 73 65 72 31 30 30 32 40 65 78 61 6d 70 6c 65 
+                       |M| 2e 63 6f 6d 
+                       |M| ]
+                       |M| [User-Password
+                       |M| (Attr-Type = 2)] = [
+                       |M| 70 61 73 73 77 6f 72 64 31 32 33 
+                       |M| ]
+                       |M| [NAS-IP-Address
+                       |M| (Attr-Type = 4)] = [2130706433]
+                       |M| [NAS-Port
+                       |M| (Attr-Type = 5)] = [0]
+                       |M| [Service-Type
+                       |M| (Attr-Type = 6)] = [2]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 73 65 61 67 75 6c 6c 2d 74 65 73 74 2d 6e 61 73 
+                       |M| ]
+                       |M| [Called-Station-Id
+                       |M| (Attr-Type = 30)] = [
+                       |M| 30 30 2d 31 31 2d 32 32 2d 33 33 2d 34 34 2d 35 
+                       |M| 35 
+                       |M| ]
+                       |M| [Calling-Station-Id
+                       |M| (Attr-Type = 31)] = [
+                       |M| 41 41 2d 42 42 2d 43 43 2d 44 44 2d 45 45 2d 46 
+                       |M| 46 
+                       |M| ]
+                       |M|]]
+2026-01-07.18:36:09.874|T|Send error on call with session-id [0]
+2026-01-07.18:36:09.874|T|Execution error on call with session-id [0]
+2026-01-07.18:36:10.878|E|The value of the field [Authenticator] is not set
+2026-01-07.18:36:10.878|T|Error while sending [[Access-Request
+                       |M|[Code] = [ 1]
+                       |M|[Identifier] = [ 3]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [User-Name
+                       |M| (Attr-Type = 1)] = [
+                       |M| 75 73 65 72 31 30 30 33 40 65 78 61 6d 70 6c 65 
+                       |M| 2e 63 6f 6d 
+                       |M| ]
+                       |M| [User-Password
+                       |M| (Attr-Type = 2)] = [
+                       |M| 70 61 73 73 77 6f 72 64 31 32 33 
+                       |M| ]
+                       |M| [NAS-IP-Address
+                       |M| (Attr-Type = 4)] = [2130706433]
+                       |M| [NAS-Port
+                       |M| (Attr-Type = 5)] = [0]
+                       |M| [Service-Type
+                       |M| (Attr-Type = 6)] = [2]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 73 65 61 67 75 6c 6c 2d 74 65 73 74 2d 6e 61 73 
+                       |M| ]
+                       |M| [Called-Station-Id
+                       |M| (Attr-Type = 30)] = [
+                       |M| 30 30 2d 31 31 2d 32 32 2d 33 33 2d 34 34 2d 35 
+                       |M| 35 
+                       |M| ]
+                       |M| [Calling-Station-Id
+                       |M| (Attr-Type = 31)] = [
+                       |M| 41 41 2d 42 42 2d 43 43 2d 44 44 2d 45 45 2d 46 
+                       |M| 46 
+                       |M| ]
+                       |M|]]
+2026-01-07.18:36:10.878|T|Send error on call with session-id [0]
+2026-01-07.18:36:10.878|T|Execution error on call with session-id [0]
+2026-01-07.18:36:11.884|E|The value of the field [Authenticator] is not set
+2026-01-07.18:36:11.884|T|Error while sending [[Access-Request
+                       |M|[Code] = [ 1]
+                       |M|[Identifier] = [ 4]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [User-Name
+                       |M| (Attr-Type = 1)] = [
+                       |M| 75 73 65 72 31 30 30 34 40 65 78 61 6d 70 6c 65 
+                       |M| 2e 63 6f 6d 
+                       |M| ]
+                       |M| [User-Password
+                       |M| (Attr-Type = 2)] = [
+                       |M| 70 61 73 73 77 6f 72 64 31 32 33 
+                       |M| ]
+                       |M| [NAS-IP-Address
+                       |M| (Attr-Type = 4)] = [2130706433]
+                       |M| [NAS-Port
+                       |M| (Attr-Type = 5)] = [0]
+                       |M| [Service-Type
+                       |M| (Attr-Type = 6)] = [2]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 73 65 61 67 75 6c 6c 2d 74 65 73 74 2d 6e 61 73 
+                       |M| ]
+                       |M| [Called-Station-Id
+                       |M| (Attr-Type = 30)] = [
+                       |M| 30 30 2d 31 31 2d 32 32 2d 33 33 2d 34 34 2d 35 
+                       |M| 35 
+                       |M| ]
+                       |M| [Calling-Station-Id
+                       |M| (Attr-Type = 31)] = [
+                       |M| 41 41 2d 42 42 2d 43 43 2d 44 44 2d 45 45 2d 46 
+                       |M| 46 
+                       |M| ]
+                       |M|]]
+2026-01-07.18:36:11.885|T|Send error on call with session-id [0]
+2026-01-07.18:36:11.885|T|Execution error on call with session-id [0]
+2026-01-07.18:36:12.888|E|The value of the field [Authenticator] is not set
+2026-01-07.18:36:12.888|T|Error while sending [[Access-Request
+                       |M|[Code] = [ 1]
+                       |M|[Identifier] = [ 5]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [User-Name
+                       |M| (Attr-Type = 1)] = [
+                       |M| 75 73 65 72 31 30 30 35 40 65 78 61 6d 70 6c 65 
+                       |M| 2e 63 6f 6d 
+                       |M| ]
+                       |M| [User-Password
+                       |M| (Attr-Type = 2)] = [
+                       |M| 70 61 73 73 77 6f 72 64 31 32 33 
+                       |M| ]
+                       |M| [NAS-IP-Address
+                       |M| (Attr-Type = 4)] = [2130706433]
+                       |M| [NAS-Port
+                       |M| (Attr-Type = 5)] = [0]
+                       |M| [Service-Type
+                       |M| (Attr-Type = 6)] = [2]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 73 65 61 67 75 6c 6c 2d 74 65 73 74 2d 6e 61 73 
+                       |M| ]
+                       |M| [Called-Station-Id
+                       |M| (Attr-Type = 30)] = [
+                       |M| 30 30 2d 31 31 2d 32 32 2d 33 33 2d 34 34 2d 35 
+                       |M| 35 
+                       |M| ]
+                       |M| [Calling-Station-Id
+                       |M| (Attr-Type = 31)] = [
+                       |M| 41 41 2d 42 42 2d 43 43 2d 44 44 2d 45 45 2d 46 
+                       |M| 46 
+                       |M| ]
+                       |M|]]
+2026-01-07.18:36:12.888|T|Send error on call with session-id [0]
+2026-01-07.18:36:12.888|T|Execution error on call with session-id [0]
+2026-01-07.18:36:13.893|E|The value of the field [Authenticator] is not set
+2026-01-07.18:36:13.893|T|Error while sending [[Access-Request
+                       |M|[Code] = [ 1]
+                       |M|[Identifier] = [ 6]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [User-Name
+                       |M| (Attr-Type = 1)] = [
+                       |M| 75 73 65 72 31 30 30 36 40 65 78 61 6d 70 6c 65 
+                       |M| 2e 63 6f 6d 
+                       |M| ]
+                       |M| [User-Password
+                       |M| (Attr-Type = 2)] = [
+                       |M| 70 61 73 73 77 6f 72 64 31 32 33 
+                       |M| ]
+                       |M| [NAS-IP-Address
+                       |M| (Attr-Type = 4)] = [2130706433]
+                       |M| [NAS-Port
+                       |M| (Attr-Type = 5)] = [0]
+                       |M| [Service-Type
+                       |M| (Attr-Type = 6)] = [2]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 73 65 61 67 75 6c 6c 2d 74 65 73 74 2d 6e 61 73 
+                       |M| ]
+                       |M| [Called-Station-Id
+                       |M| (Attr-Type = 30)] = [
+                       |M| 30 30 2d 31 31 2d 32 32 2d 33 33 2d 34 34 2d 35 
+                       |M| 35 
+                       |M| ]
+                       |M| [Calling-Station-Id
+                       |M| (Attr-Type = 31)] = [
+                       |M| 41 41 2d 42 42 2d 43 43 2d 44 44 2d 45 45 2d 46 
+                       |M| 46 
+                       |M| ]
+                       |M|]]
+2026-01-07.18:36:13.893|T|Send error on call with session-id [0]
+2026-01-07.18:36:13.893|T|Execution error on call with session-id [0]
+2026-01-07.18:36:14.896|E|The value of the field [Authenticator] is not set
+2026-01-07.18:36:14.897|T|Error while sending [[Access-Request
+                       |M|[Code] = [ 1]
+                       |M|[Identifier] = [ 7]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [User-Name
+                       |M| (Attr-Type = 1)] = [
+                       |M| 75 73 65 72 31 30 30 37 40 65 78 61 6d 70 6c 65 
+                       |M| 2e 63 6f 6d 
+                       |M| ]
+                       |M| [User-Password
+                       |M| (Attr-Type = 2)] = [
+                       |M| 70 61 73 73 77 6f 72 64 31 32 33 
+                       |M| ]
+                       |M| [NAS-IP-Address
+                       |M| (Attr-Type = 4)] = [2130706433]
+                       |M| [NAS-Port
+                       |M| (Attr-Type = 5)] = [0]
+                       |M| [Service-Type
+                       |M| (Attr-Type = 6)] = [2]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 73 65 61 67 75 6c 6c 2d 74 65 73 74 2d 6e 61 73 
+                       |M| ]
+                       |M| [Called-Station-Id
+                       |M| (Attr-Type = 30)] = [
+                       |M| 30 30 2d 31 31 2d 32 32 2d 33 33 2d 34 34 2d 35 
+                       |M| 35 
+                       |M| ]
+                       |M| [Calling-Station-Id
+                       |M| (Attr-Type = 31)] = [
+                       |M| 41 41 2d 42 42 2d 43 43 2d 44 44 2d 45 45 2d 46 
+                       |M| 46 
+                       |M| ]
+                       |M|]]
+2026-01-07.18:36:14.897|T|Send error on call with session-id [0]
+2026-01-07.18:36:14.897|T|Execution error on call with session-id [0]
+2026-01-07.18:36:15.901|E|The value of the field [Authenticator] is not set
+2026-01-07.18:36:15.901|T|Error while sending [[Access-Request
+                       |M|[Code] = [ 1]
+                       |M|[Identifier] = [ 8]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [User-Name
+                       |M| (Attr-Type = 1)] = [
+                       |M| 75 73 65 72 31 30 30 38 40 65 78 61 6d 70 6c 65 
+                       |M| 2e 63 6f 6d 
+                       |M| ]
+                       |M| [User-Password
+                       |M| (Attr-Type = 2)] = [
+                       |M| 70 61 73 73 77 6f 72 64 31 32 33 
+                       |M| ]
+                       |M| [NAS-IP-Address
+                       |M| (Attr-Type = 4)] = [2130706433]
+                       |M| [NAS-Port
+                       |M| (Attr-Type = 5)] = [0]
+                       |M| [Service-Type
+                       |M| (Attr-Type = 6)] = [2]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 73 65 61 67 75 6c 6c 2d 74 65 73 74 2d 6e 61 73 
+                       |M| ]
+                       |M| [Called-Station-Id
+                       |M| (Attr-Type = 30)] = [
+                       |M| 30 30 2d 31 31 2d 32 32 2d 33 33 2d 34 34 2d 35 
+                       |M| 35 
+                       |M| ]
+                       |M| [Calling-Station-Id
+                       |M| (Attr-Type = 31)] = [
+                       |M| 41 41 2d 42 42 2d 43 43 2d 44 44 2d 45 45 2d 46 
+                       |M| 46 
+                       |M| ]
+                       |M|]]
+2026-01-07.18:36:15.902|T|Send error on call with session-id [0]
+2026-01-07.18:36:15.902|T|Execution error on call with session-id [0]
+2026-01-07.18:36:16.905|E|The value of the field [Authenticator] is not set
+2026-01-07.18:36:16.905|T|Error while sending [[Access-Request
+                       |M|[Code] = [ 1]
+                       |M|[Identifier] = [ 9]
+                       |M|[Length] = [ 0]
+                       |M|[Authenticator] = [  NULL(empty)]
+                       |M| [User-Name
+                       |M| (Attr-Type = 1)] = [
+                       |M| 75 73 65 72 31 30 30 39 40 65 78 61 6d 70 6c 65 
+                       |M| 2e 63 6f 6d 
+                       |M| ]
+                       |M| [User-Password
+                       |M| (Attr-Type = 2)] = [
+                       |M| 70 61 73 73 77 6f 72 64 31 32 33 
+                       |M| ]
+                       |M| [NAS-IP-Address
+                       |M| (Attr-Type = 4)] = [2130706433]
+                       |M| [NAS-Port
+                       |M| (Attr-Type = 5)] = [0]
+                       |M| [Service-Type
+                       |M| (Attr-Type = 6)] = [2]
+                       |M| [NAS-Identifier
+                       |M| (Attr-Type = 32)] = [
+                       |M| 73 65 61 67 75 6c 6c 2d 74 65 73 74 2d 6e 61 73 
+                       |M| ]
+                       |M| [Called-Station-Id
+                       |M| (Attr-Type = 30)] = [
+                       |M| 30 30 2d 31 31 2d 32 32 2d 33 33 2d 34 34 2d 35 
+                       |M| 35 
+                       |M| ]
+                       |M| [Calling-Station-Id
+                       |M| (Attr-Type = 31)] = [
+                       |M| 41 41 2d 42 42 2d 43 43 2d 44 44 2d 45 45 2d 46 
+                       |M| 46 
+                       |M| ]
+                       |M|]]
+2026-01-07.18:36:16.906|T|Send error on call with session-id [0]
+2026-01-07.18:36:16.906|T|Execution error on call with session-id [0]
+2026-01-07.18:36:17.876|A|STOP  log

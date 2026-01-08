@@ -1,0 +1,109 @@
+2026-01-08.12:53:57.999|A|START log
+2026-01-08.12:53:57.999|A|Platform use LITTLE_ENDIAN coding
+2026-01-08.12:53:57.999|A|Integer32 Type size is: 8
+2026-01-08.12:53:57.999|A|Integer64 Type size is: 8
+2026-01-08.12:53:57.999|A|Configuration data:
+                       | |option_log_file  [logs/radius-auth-client.log]
+                       | |option_conf_file [config/radius/conf.auth-client.xml]
+                       | |option_dico_file [config/radius/radius-dictionary.xml]
+                       | |option_scen_file [scenario/radius/radius-auth.client.xml]
+                       | |log_stat_file    [../logs/radius-auth-client-stat.csv]
+                       | |option_log_level [ET]
+                       | |option_bg_mode   [false]
+                       | |call_rate        [1]
+                       | |burst_limit      [0]
+                       | |max_send         [200]
+                       | |max_receive      [200]
+                       | |select_timeout   [50]
+                       | |max_simult_calls [2000]
+                       | |call_timeout_ms  [10000]
+                       | |msg_buffer_size  [4096]
+                       | |display_period   [1]
+                       | |log_stat_period  [1]
+                       | |resp_time_repart [50,75,100,150,300,5000]
+                       | |number_calls     [0]
+                       | |notimelog        [false]
+                       | |msg check        [false]
+                       | |msg check mask   [P]
+                       | |check behaviour  [warning]
+                       | |call rate scale  [1]
+                       | |model traffic    [best-effort]
+                       | |external data file    [none]
+                       | |external data select  [sequential]
+2026-01-08.12:53:57.999|A|PID [679230]
+2026-01-08.12:54:08.070|T|Call timeout detected
+2026-01-08.12:54:09.022|T|Call timeout detected
+2026-01-08.12:54:10.024|T|Call timeout detected
+2026-01-08.12:54:11.026|T|Call timeout detected
+2026-01-08.12:54:12.028|T|Call timeout detected
+2026-01-08.12:54:13.030|T|Call timeout detected
+2026-01-08.12:54:14.032|T|Call timeout detected
+2026-01-08.12:54:15.034|T|Call timeout detected
+2026-01-08.12:54:16.036|T|Call timeout detected
+2026-01-08.12:54:17.038|T|Call timeout detected
+2026-01-08.12:54:18.040|T|Call timeout detected
+2026-01-08.12:54:19.042|T|Call timeout detected
+2026-01-08.12:54:20.044|T|Call timeout detected
+2026-01-08.12:54:21.046|T|Call timeout detected
+2026-01-08.12:54:22.047|T|Call timeout detected
+2026-01-08.12:54:23.049|T|Call timeout detected
+2026-01-08.12:54:24.051|T|Call timeout detected
+2026-01-08.12:54:25.053|T|Call timeout detected
+2026-01-08.12:54:26.056|T|Call timeout detected
+2026-01-08.12:54:27.058|T|Call timeout detected
+2026-01-08.12:54:28.060|T|Call timeout detected
+2026-01-08.12:54:29.061|T|Call timeout detected
+2026-01-08.12:54:30.063|T|Call timeout detected
+2026-01-08.12:54:31.065|T|Call timeout detected
+2026-01-08.12:54:32.068|T|Call timeout detected
+2026-01-08.12:54:33.070|T|Call timeout detected
+2026-01-08.12:54:34.021|T|Call timeout detected
+2026-01-08.12:54:35.023|T|Call timeout detected
+2026-01-08.12:54:36.025|T|Call timeout detected
+2026-01-08.12:54:37.027|T|Call timeout detected
+2026-01-08.12:54:38.029|T|Call timeout detected
+2026-01-08.12:54:39.031|T|Call timeout detected
+2026-01-08.12:54:40.032|T|Call timeout detected
+2026-01-08.12:54:41.034|T|Call timeout detected
+2026-01-08.12:54:42.036|T|Call timeout detected
+2026-01-08.12:54:43.038|T|Call timeout detected
+2026-01-08.12:54:44.040|T|Call timeout detected
+2026-01-08.12:54:45.042|T|Call timeout detected
+2026-01-08.12:54:46.044|T|Call timeout detected
+2026-01-08.12:54:47.045|T|Call timeout detected
+2026-01-08.12:54:48.047|T|Call timeout detected
+2026-01-08.12:54:49.049|T|Call timeout detected
+2026-01-08.12:54:50.051|T|Call timeout detected
+2026-01-08.12:54:51.053|T|Call timeout detected
+2026-01-08.12:54:52.055|T|Call timeout detected
+2026-01-08.12:54:53.057|T|Call timeout detected
+2026-01-08.12:54:54.059|T|Call timeout detected
+2026-01-08.12:54:55.060|T|Call timeout detected
+2026-01-08.12:54:56.062|T|Call timeout detected
+2026-01-08.12:54:57.064|T|Call timeout detected
+2026-01-08.12:54:58.066|T|Call timeout detected
+2026-01-08.12:54:59.068|T|Call timeout detected
+2026-01-08.12:55:00.020|T|Call timeout detected
+2026-01-08.12:55:01.022|T|Call timeout detected
+2026-01-08.12:55:02.024|T|Call timeout detected
+2026-01-08.12:55:03.026|T|Call timeout detected
+2026-01-08.12:55:04.028|T|Call timeout detected
+2026-01-08.12:55:05.030|T|Call timeout detected
+2026-01-08.12:55:06.032|T|Call timeout detected
+2026-01-08.12:55:07.034|T|Call timeout detected
+2026-01-08.12:55:08.036|T|Call timeout detected
+2026-01-08.12:55:09.038|T|Call timeout detected
+2026-01-08.12:55:10.040|T|Call timeout detected
+2026-01-08.12:55:11.042|T|Call timeout detected
+2026-01-08.12:55:12.044|T|Call timeout detected
+2026-01-08.12:55:13.046|T|Call timeout detected
+2026-01-08.12:55:14.048|T|Call timeout detected
+2026-01-08.12:55:15.049|T|Call timeout detected
+2026-01-08.12:55:16.051|T|Call timeout detected
+2026-01-08.12:55:17.053|T|Call timeout detected
+2026-01-08.12:55:18.056|T|Call timeout detected
+2026-01-08.12:55:19.062|T|Call timeout detected
+2026-01-08.12:55:20.065|T|Call timeout detected
+2026-01-08.12:55:21.053|T|Call timeout detected
+2026-01-08.12:55:22.085|T|Call timeout detected
+2026-01-08.12:55:23.084|A|STOP  log

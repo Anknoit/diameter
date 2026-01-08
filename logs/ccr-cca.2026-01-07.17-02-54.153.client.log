@@ -1,0 +1,115 @@
+2026-01-07.17:02:54.154|A|START log
+2026-01-07.17:02:54.155|A|Platform use LITTLE_ENDIAN coding
+2026-01-07.17:02:54.155|A|Integer32 Type size is: 8
+2026-01-07.17:02:54.155|A|Integer64 Type size is: 8
+2026-01-07.17:02:54.155|A|Configuration data:
+                       | |option_log_file  [../logs/ccr-cca.client.log]
+                       | |option_conf_file [../config/conf.client.xml]
+                       | |option_dico_file [../config/base_cc.xml]
+                       | |option_scen_file [../scenario/ccr-cca.client.xml]
+                       | |log_stat_file    [../logs/client-stat.csv]
+                       | |option_log_level [ET]
+                       | |option_bg_mode   [false]
+                       | |call_rate        [1]
+                       | |burst_limit      [0]
+                       | |max_send         [200]
+                       | |max_receive      [200]
+                       | |select_timeout   [50]
+                       | |max_simult_calls [2000]
+                       | |call_timeout_ms  [10000]
+                       | |msg_buffer_size  [4096]
+                       | |display_period   [1]
+                       | |log_stat_period  [1]
+                       | |resp_time_repart [50,75,100,150,300,5000]
+                       | |number_calls     [0]
+                       | |notimelog        [false]
+                       | |msg check        [false]
+                       | |msg check mask   [P]
+                       | |check behaviour  [warning]
+                       | |call rate scale  [1]
+                       | |model traffic    [best-effort]
+                       | |external data file    [none]
+                       | |external data select  [sequential]
+2026-01-07.17:02:54.157|A|PID [391204]
+2026-01-07.17:02:54.159|E|Unexpexted message that doesn't match the scenario.
+2026-01-07.17:02:54.159|T|Unexpected (no scenario found) call with session-id [3721435655]
+2026-01-07.17:02:54.159|T|Unexpected message received [ [CER
+                       |M|[protocol-version] = [ 1]
+                       |M|[msg-length] = [ 372]
+                       |M|[flags] = [ 0]
+                       |M|[cmd-code] = [ 257]
+                       |M|[application-id] = [ 0]
+                       |M|[HbH-id] = [ 3721435655]
+                       |M|[EtE-id] = [ 900763108]
+                       |M| [Result-Code
+                       |M| (avp-code = 268)(flags = 64)] = [2001]
+                       |M| [Origin-Host
+                       |M| (avp-code = 264)(flags = 64)] = [
+                       |M| 61 61 61 2e 65 78 61 6d 70 6c 65 2e 63 6f 6d 
+                       |M| ]
+                       |M| [Origin-Realm
+                       |M| (avp-code = 296)(flags = 64)] = [
+                       |M| 65 78 61 6d 70 6c 65 2e 63 6f 6d 
+                       |M| ]
+                       |M| [Host-IP-Address
+                       |M| (avp-code = 257)(flags = 64)] = [
+                       |M| 00 01 00 00 00 00 
+                       |M| ]
+                       |M| [Vendor-Id
+                       |M| (avp-code = 266)(flags = 64)] = [10415]
+                       |M| [Product-Name
+                       |M| (avp-code = 269)(flags = 64)] = [
+                       |M| 44 49 41 4d 45 54 45 52 2d 41 41 41 2d 53 65 72 
+                       |M| 76 65 72 2d 47 6f 44 
+                       |M| ]
+                       |M| [Origin-State-Id
+                       |M| (avp-code = 278)(flags = 64)] = [1094807040]
+                       |M| [Acct-Application-Id
+                       |M| (avp-code = 259)(flags = 64)] = [3]
+                       |M| [Auth-Application-Id
+                       |M| (avp-code = 258)(flags = 64)] = [4]
+                       |M| [Supported-Vendor-Id
+                       |M| (avp-code = 265)(flags = 64)] = [10415]
+                       |M| [Vendor-Specific-Application-Id
+                       |M| (avp-code = 260)(flags = 64)] = [
+                       |M| | [Vendor-Id
+                       |M| | (avp-code = 266)(flags = 64)] = [10415]
+                       |M| | [Auth-Application-Id
+                       |M| | (avp-code = 258)(flags = 64)] = [16777238]
+                       |M| ]
+                       |M| [Auth-Application-Id
+                       |M| (avp-code = 258)(flags = 64)] = [1]
+                       |M| [Supported-Vendor-Id
+                       |M| (avp-code = 265)(flags = 64)] = [10415]
+                       |M| [Vendor-Specific-Application-Id
+                       |M| (avp-code = 260)(flags = 64)] = [
+                       |M| | [Vendor-Id
+                       |M| | (avp-code = 266)(flags = 64)] = [10415]
+                       |M| | [Auth-Application-Id
+                       |M| | (avp-code = 258)(flags = 64)] = [4]
+                       |M| ]
+                       |M| [Supported-Vendor-Id
+                       |M| (avp-code = 265)(flags = 64)] = [10415]
+                       |M| [Vendor-Specific-Application-Id
+                       |M| (avp-code = 260)(flags = 64)] = [
+                       |M| | [Vendor-Id
+                       |M| | (avp-code = 266)(flags = 64)] = [10415]
+                       |M| | [Auth-Application-Id
+                       |M| | (avp-code = 258)(flags = 64)] = [16777251]
+                       |M| ]
+                       |M| [Supported-Vendor-Id
+                       |M| (avp-code = 265)(flags = 64)] = [10415]
+                       |M| [Vendor-Specific-Application-Id
+                       |M| (avp-code = 260)(flags = 64)] = [
+                       |M| | [Vendor-Id
+                       |M| | (avp-code = 266)(flags = 64)] = [10415]
+                       |M| | [Auth-Application-Id
+                       |M| | (avp-code = 258)(flags = 64)] = [16777265]
+                       |M| ]
+                       |M| [Firmware-Revision
+                       |M| (avp-code = 267)(flags = 0)] = [1]
+                       |M|]
+                       | |]
+2026-01-07.17:03:04.186|T|Call timeout detected
+2026-01-07.17:06:02.910|T|channel [channel-1] closed
+2026-01-07.17:06:03.345|A|STOP  log

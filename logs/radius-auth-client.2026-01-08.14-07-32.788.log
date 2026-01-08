@@ -1,0 +1,34 @@
+2026-01-08.14:07:32.794|A|START log
+2026-01-08.14:07:32.794|A|Platform use LITTLE_ENDIAN coding
+2026-01-08.14:07:32.794|A|Integer32 Type size is: 8
+2026-01-08.14:07:32.794|A|Integer64 Type size is: 8
+2026-01-08.14:07:32.794|A|Configuration data:
+                       | |option_log_file  [logs/radius-auth-client.log]
+                       | |option_conf_file [config/radius/conf.auth-client.xml]
+                       | |option_dico_file [config/radius/radius-dictionary.xml]
+                       | |option_scen_file [scenario/radius/radius-auth.client.xml]
+                       | |log_stat_file    [../logs/radius-auth-client-stat.csv]
+                       | |option_log_level [ET]
+                       | |option_bg_mode   [false]
+                       | |call_rate        [1]
+                       | |burst_limit      [0]
+                       | |max_send         [200]
+                       | |max_receive      [200]
+                       | |select_timeout   [50]
+                       | |max_simult_calls [2000]
+                       | |call_timeout_ms  [10000]
+                       | |msg_buffer_size  [4096]
+                       | |display_period   [1]
+                       | |log_stat_period  [1]
+                       | |resp_time_repart [50,75,100,150,300,5000]
+                       | |number_calls     [0]
+                       | |notimelog        [false]
+                       | |msg check        [false]
+                       | |msg check mask   [P]
+                       | |check behaviour  [warning]
+                       | |call rate scale  [1]
+                       | |model traffic    [best-effort]
+                       | |external data file    [none]
+                       | |external data select  [sequential]
+2026-01-08.14:07:32.798|A|PID [696045]
+2026-01-08.14:08:09.835|A|STOP  log

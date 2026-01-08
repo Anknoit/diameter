@@ -1,0 +1,27 @@
+#!/bin/ksh
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+# (c)Copyright 2006 Hewlett-Packard Development Company, LP.
+#
+#
+
+export LD_LIBRARY_PATH=/usr/local/bin
+# seagull -conf ../config/conf.server.xml -dico ../config/base_cx.xml -scen ../scenario/sar-saa.server.xml -log ../logs/sar-saa.server.log -llevel ET 
+#seagull -conf ../config/conf.server.xml -dico ../config/base_cc.xml -scen ../scenario/ccr-cca.server.xml -log ../logs/ccr-cca.server.log -llevel ET
+
+
+# RADIUS
+seagull -conf ../config/radius/conf.server.xml -dico ../config/radius/radius-accounting.xml -scen ../scenario/radius-accounting.client.xml -log ../logs/radius-accounting.client.log -llevel ET

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<scenario name="RADIUS Authentication Client Scenario">
+
+<counter>
+  <counterdef name="identifier-counter" init="0"> </counterdef>
+  <counterdef name="user-counter" init="1000"> </counterdef>
+</counter>
+
+<!-- Traffic Scenario -->
+<traffic>
+
+  <!-- Send Access-Request -->
+  <send channel="trans-ip-v4">
+    <action>
+      <!-- Increment counters for each new authentication request -->
+      <inc-counter name="identifier-counter"> </inc-counter>
+      <inc-counter name="user-counter"> </inc-counter>
+      
+      <set-value name="Identifier" 
+                 format="$(identifier-counter)"></set-value>
+      <set-value name="User-Name" 
+                 format="user$(user-counter)@example.com"></set-value>
+      <set-value name="Authenticator" 
+                 format="0123456789ABCDEF0123456789ABCDEF"></set-value>
+
+    </action>
+    <Message name="Access-Request">
+      <Attribute name="User-Name" value="value_is_replaced"> </Attribute>
+      <Attribute name="User-Password" value="password123"> </Attribute>
+      <Attribute name="NAS-IP-Address" value="2130706433"> </Attribute> <!-- 127.0.0.1 -->
+      <Attribute name="NAS-Port" value="0"> </Attribute>
+      <Attribute name="Service-Type" value="2"> </Attribute> <!-- Framed -->
+      <Attribute name="NAS-Identifier" value="seagull-test-nas"> </Attribute>
+      <Attribute name="Called-Station-Id" value="00-11-22-33-44-55"> </Attribute>
+      <Attribute name="Calling-Station-Id" value="AA-BB-CC-DD-EE-FF"> </Attribute>
+    </Message>
+    <action>
+      <store name="USERNAME" entity="User-Name"></store>
+      <start-timer></start-timer>
+    </action>
+  </send>
+  
+  <!-- Receive Access-Accept or Access-Reject -->
+  <receive channel="trans-ip-v4">
+    <action>
+      <stop-timer></stop-timer>
+    </action>
+    <!-- Accept Access-Accept response -->
+    <Message name="Access-Accept">
+    </Message>
+  </receive>
+
+</traffic>
+  
+</scenario>

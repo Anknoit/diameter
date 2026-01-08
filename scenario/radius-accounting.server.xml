@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<scenario name="Radius Accounting Server">
+
+  <receive>
+    <Message>
+      <!-- Accounting-Request -->
+      <Code value="4"></Code>
+    </Message>
+  </receive>
+
+  <send>
+    <Message>
+      <!-- Accounting-Response -->
+      <Code value="5"></Code>
+    </Message>
+  </send>
+
+</scenario>
+

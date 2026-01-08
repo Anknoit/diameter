@@ -1,0 +1,6 @@
+2026-01-07.18:26:04.229|A|START log
+2026-01-07.18:26:04.229|E|unknown name [Access-Request] for [Message]
+2026-01-07.18:26:04.230|E|Error while creating message
+2026-01-07.18:26:04.230|E|Bad scenario definition
+2026-01-07.18:26:04.230|E|Traffic scenario error
+2026-01-07.18:26:04.230|A|STOP  log

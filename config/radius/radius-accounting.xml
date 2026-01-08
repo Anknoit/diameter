@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<protocol name="radius-v1" type="binary" padding="4">
+
+<types>
+  <!-- Types defined for the Attributes   -->
+  <typedef name="Octet"       type="number" size="1"  unit="octet"> </typedef>
+  <typedef name="Integer32"   type="signed" size="4"  unit="octet"> </typedef>
+  <typedef name="Unsigned32"  type="number" size="4"  unit="octet"> </typedef>
+  <typedef name="Address"     type="number" size="4"  unit="octet"> </typedef>
+  <typedef name="Time"        type="number" size="4"  unit="octet"> </typedef>
+  <typedef name="String"      type="string"           unit="octet"> </typedef>
+  <typedef name="Text"        type="string"           unit="octet"> </typedef>
+  <typedef name="Grouped"     type="grouped"                      > </typedef>
+
+  <typedef name="Octet_16"    type="string" size="16" unit="octet"> </typedef>
+  <typedef name="AddressV6"   type="string" size="16" unit="octet"> </typedef>
+  <typedef name="InterfaceId" type="string" size="8"  unit="octet"> </typedef>
+</types>
+
+<header name="Message" length="Length" type="Code">
+  <fielddef name="Code"          size="1" unit="octet"> </fielddef>
+  <fielddef name="Identifier"    size="1" unit="octet"> </fielddef>
+  <fielddef name="Length"        size="2" unit="octet"> </fielddef>
+  <fielddef name="Authenticator" type="Octet_16"> </fielddef> 
+</header>
+
+<body>
+  <header name="Attribute" length="Attr-Length" type="Attr-Type">
+     <fielddef name="Attr-Type"   size="1" unit="octet"> </fielddef>
+     <fielddef name="Attr-Length" size="1" unit="octet"> </fielddef>
+  </header>
+</body>
+         
+
+<dictionary>
+  <!-- RADIUS Attribute definitions -->
+  <Attribute>
+    <!-- RADIUS Base Attribute definitions see RFC 2865 -->
+    <define name="User-Name" type="String">
+      <setfield name="Attr-Type" value="1"></setfield>
+    </define>
+    <define name="User-Password" type="String">
+      <setfield name="Attr-Type" value="2"></setfield>
+    </define>
+    <define name="CHAP-Password" type="String">
+      <setfield name="Attr-Type" value="3"></setfield>
+      <!-- composed by CHAP-Id Octect and String -->
+    </define> 
+    <define name="NAS-IP-Address" type="Address">
+      <setfield name="Attr-Type" value="4"></setfield>
+    </define>
+    <define name="NAS-Port" type="Integer32">
+      <setfield name="Attr-Type" value="5"></setfield>
+    </define>
+    <define name="Service-Type" type="Integer32">
+      <setfield name="Attr-Type" value="6"></setfield>
+    </define>
+  </Attribute>
+</dictionary>
+
+    <define name="Access-Request">
+       <setfield name="Code" value="1"></setfield>
+    </define> 
+    <define name="Access-Accept">
+       <setfield name="Code" value="2"></setfield>
+    </define>
+
+</protocol>
+

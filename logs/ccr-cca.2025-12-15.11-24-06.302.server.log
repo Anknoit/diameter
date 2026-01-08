@@ -1,0 +1,6 @@
+2025-12-15.11:24:06.304|A|START log
+2025-12-15.11:24:06.304|E|unknown name [CCR] for [command]
+2025-12-15.11:24:06.304|E|Error while creating message
+2025-12-15.11:24:06.304|E|Bad scenario definition
+2025-12-15.11:24:06.304|E|Traffic scenario error
+2025-12-15.11:24:06.304|A|STOP  log

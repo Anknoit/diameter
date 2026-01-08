@@ -1,0 +1,5 @@
+2026-01-07.18:40:39.452|A|START log
+2026-01-07.18:40:39.452|E|format value mandatory for action [set-value]
+2026-01-07.18:40:39.452|E|Bad scenario definition
+2026-01-07.18:40:39.452|E|Traffic scenario error
+2026-01-07.18:40:39.452|A|STOP  log
