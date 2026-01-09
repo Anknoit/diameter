@@ -85,7 +85,7 @@ RADIUS Protocol
 
 ```bash
 sudo tshark -i lo -f "port 1813" \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius"
 ```
 
@@ -93,7 +93,7 @@ sudo tshark -i lo -f "port 1813" \
 
 ```bash
 sudo tshark -i lo -f "port 1813" \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius" \
   -T fields \
   -e radius.code \
@@ -106,7 +106,7 @@ sudo tshark -i lo -f "port 1813" \
 
 ```bash
 sudo tshark -i lo -f "port 1813" \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius" \
   -T fields \
   -e radius.code | sort | uniq -c
@@ -117,13 +117,13 @@ sudo tshark -i lo -f "port 1813" \
 ```bash
 # Only Accounting-Request (code 4)
 sudo tshark -i lo -f "port 1813" \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius.code == 4" \
   -V
 
 # Only Accounting-Response (code 5)
 sudo tshark -i lo -f "port 1813" \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius.code == 5" \
   -V
 ```
@@ -150,18 +150,18 @@ sudo tcpdump -i lo -w /tmp/radius-test.pcap port 1813
 ```bash
 # Summary view
 tshark -r /tmp/radius-test.pcap \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius"
 
 # Detailed view
 tshark -r /tmp/radius-test.pcap \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius" \
   -V
 
 # Extract specific fields
 tshark -r /tmp/radius-test.pcap \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius" \
   -T fields \
   -e frame.number \
@@ -176,14 +176,14 @@ tshark -r /tmp/radius-test.pcap \
 ```bash
 # Packet count by type
 tshark -r /tmp/radius-test.pcap \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius" \
   -T fields \
   -e radius.code | sort | uniq -c
 
 # Session summary
 tshark -r /tmp/radius-test.pcap \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius" \
   -T fields \
   -e radius.Acct_Session_Id \
@@ -215,7 +215,7 @@ timeout 5 ./run/start-radius-acct-client.sh
 
 # Option C: Manual radclient
 echo "Acct-Status-Type=Start,User-Name=testuser,Acct-Session-Id=abc123" | \
-radclient -x 127.0.0.1:1813 acct testing123
+radclient -x 127.0.0.1:1813 acct root@123
 ```
 
 ### What You'll See in Terminal 1
@@ -312,10 +312,10 @@ ip addr show lo
 grep "shared_secret" ~/.config/wireshark/radius_secrets
 
 # Should show:
-# 127.0.0.1,1813,testing123
+# 127.0.0.1,1813,root@123
 
 # Test with correct secret
-tshark -r test.pcap -o "radius.shared_secret:testing123" -Y "radius" -V
+tshark -r test.pcap -o "radius.shared_secret:root@123" -Y "radius" -V
 ```
 
 ### Permission Denied
@@ -350,16 +350,16 @@ sudo tshark -i lo -f "port 1813"
 sudo tcpdump -i lo -w test.pcap port 1813
 
 # Analyze file (summary)
-tshark -r test.pcap -o "radius.shared_secret:testing123" -Y "radius"
+tshark -r test.pcap -o "radius.shared_secret:root@123" -Y "radius"
 
 # Analyze file (detailed)
-tshark -r test.pcap -o "radius.shared_secret:testing123" -Y "radius" -V
+tshark -r test.pcap -o "radius.shared_secret:root@123" -Y "radius" -V
 
 # Send test
 ./run/test-radclient-acct.sh
 
 # Manual test
-echo "Acct-Status-Type=Start,User-Name=test" | radclient 127.0.0.1:1813 acct testing123
+echo "Acct-Status-Type=Start,User-Name=test" | radclient 127.0.0.1:1813 acct root@123
 ```
 
 ## Next Steps

@@ -4,7 +4,7 @@ This guide shows how to use a shared secret with RADIUS for encryption and how t
 
 ## Shared Secret
 
-**Secret Key**: `testing123`
+**Secret Key**: `root@123`
 
 This shared secret is used to:
 1. Encrypt the `User-Password` attribute
@@ -41,7 +41,7 @@ Acct-Session-Time=990,\
 Acct-Input-Octets=6990,\
 Acct-Output-Octets=7990,\
 Calling-Station-Id=lag-10:3051.148" | \
-radclient -x 127.0.0.1:1813 acct testing123
+radclient -x 127.0.0.1:1813 acct root@123
 ```
 
 ### Test Authentication with radclient
@@ -54,7 +54,7 @@ NAS-IP-Address=127.0.0.1,\
 NAS-Port=0,\
 Service-Type=Framed,\
 NAS-Identifier=test-nas" | \
-radclient -x 127.0.0.1:1812 auth testing123
+radclient -x 127.0.0.1:1812 auth root@123
 ```
 
 The `-x` flag shows debug output including the encrypted password.
@@ -66,7 +66,7 @@ The `-x` flag shows debug output including the encrypted password.
 1. Open Wireshark
 2. Go to **Edit → Preferences**
 3. Expand **Protocols** → **RADIUS**
-4. In the **Shared Secret** field, enter: `testing123`
+4. In the **Shared Secret** field, enter: `root@123`
 5. Click **OK**
 
 ### Method 2: Create Shared Secrets File
@@ -78,10 +78,10 @@ Create a file with multiple secrets for different servers:
 mkdir -p ~/.config/wireshark
 cat > ~/.config/wireshark/radius_secrets << 'EOF'
 # Format: <IP address>,<UDP port>,<shared secret>
-127.0.0.1,1812,testing123
-127.0.0.1,1813,testing123
-0.0.0.0,1812,testing123
-0.0.0.0,1813,testing123
+127.0.0.1,1812,root@123
+127.0.0.1,1813,root@123
+0.0.0.0,1812,root@123
+0.0.0.0,1813,root@123
 EOF
 ```
 
@@ -97,12 +97,12 @@ Decrypt RADIUS packets using tshark:
 ```bash
 # Capture and decrypt RADIUS traffic
 sudo tshark -i lo -f "port 1813" \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius" -V
 
 # Or from a capture file
 tshark -r radius-acct.pcap \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius" -V
 ```
 
@@ -177,7 +177,7 @@ echo "Acct-Status-Type=Start,\
 User-Name=testuser,\
 Acct-Session-Id=test-123,\
 NAS-Identifier=test-nas" | \
-radclient -x 127.0.0.1:1813 acct testing123
+radclient -x 127.0.0.1:1813 acct root@123
 ```
 
 ### 4. View in Wireshark
@@ -236,7 +236,7 @@ If radclient can't connect:
 ## Security Notes
 
 ⚠️ **Important**: 
-- The shared secret should be **strong** in production (not `testing123`)
+- The shared secret should be **strong** in production (not `root@123`)
 - RADIUS encryption is **weak** by modern standards
 - Use RADIUS over TLS (RadSec) for better security
 - Never send RADIUS over untrusted networks without a VPN
@@ -245,7 +245,7 @@ If radclient can't connect:
 
 ```bash
 # Terminal 1: Start Wireshark
-sudo tshark -i lo -f "port 1813" -o "radius.shared_secret:testing123" -V
+sudo tshark -i lo -f "port 1813" -o "radius.shared_secret:root@123" -V
 
 # Terminal 2: Start Server
 cd /home/ankit/opt/seagull/diameter
@@ -253,7 +253,7 @@ cd /home/ankit/opt/seagull/diameter
 
 # Terminal 3: Send Request
 echo "Acct-Status-Type=Start,User-Name=testuser,Acct-Session-Id=abc123" | \
-radclient -x 127.0.0.1:1813 acct testing123
+radclient -x 127.0.0.1:1813 acct root@123
 
 # You'll see the full decrypted packet in tshark output!
 ```

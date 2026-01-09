@@ -4,7 +4,7 @@
 
 This setup enables RADIUS packet decryption in Wireshark and CLI tools using a shared secret.
 
-**Shared Secret**: `testing123`
+**Shared Secret**: `root@123`
 
 ## Quick Start
 
@@ -68,12 +68,12 @@ wireshark /tmp/radius-test.pcap
 ```bash
 # Live capture with decryption
 sudo tshark -i lo -f "port 1813" \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius" -V
 
 # Decrypt existing capture
 tshark -r /tmp/radius-test.pcap \
-  -o "radius.shared_secret:testing123" \
+  -o "radius.shared_secret:root@123" \
   -Y "radius" -V | less
 ```
 
@@ -82,11 +82,11 @@ tshark -r /tmp/radius-test.pcap \
 ```bash
 # Accounting request
 echo "Acct-Status-Type=Start,User-Name=testuser,Acct-Session-Id=123" | \
-radclient -x 127.0.0.1:1813 acct testing123
+radclient -x 127.0.0.1:1813 acct root@123
 
 # Authentication request (with encrypted password)
 echo "User-Name=testuser,User-Password=secret123" | \
-radclient -x 127.0.0.1:1812 auth testing123
+radclient -x 127.0.0.1:1812 auth root@123
 ```
 
 ## Files Created
@@ -161,7 +161,7 @@ radius.authenticator_valid == 0
 
 **Solution**:
 1. Verify secret in Wireshark: Edit → Preferences → Protocols → RADIUS
-2. Check it matches: `testing123`
+2. Check it matches: `root@123`
 3. Reload the capture file
 
 ### Issue: radclient not found
@@ -189,7 +189,7 @@ sudo ufw status
 ## Security Notes
 
 ⚠️ **Important**:
-- `testing123` is for **testing only**
+- `root@123` is for **testing only**
 - Use strong secrets in production (20+ random characters)
 - RADIUS encryption is weak - use RadSec (RADIUS over TLS) for production
 - Never transmit RADIUS over untrusted networks without VPN/IPsec

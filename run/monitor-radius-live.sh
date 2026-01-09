@@ -3,7 +3,7 @@
 # Live RADIUS Traffic Monitor with Decryption
 # This script captures and displays RADIUS traffic in real-time with decryption
 
-SHARED_SECRET="testing123"
+SHARED_SECRET="root@123"
 PORT="1813"
 
 echo "============================================"

@@ -36,7 +36,7 @@ Alc-Subsc-Prof-Str=default-sub,\
 Alc-SLA-Prof-Str=default-sla,\
 Alc-Client-Hardware-Addr=00:1b:da:bb:34:e1,\
 Alc-Acct-Triggered-Reason=regular" | \
-radclient -s 127.0.0.1:1813 acct testing123
+radclient -s 127.0.0.1:1813 acct root@123
 ```
 
 ## What Was Added

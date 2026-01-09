@@ -13,7 +13,7 @@
     name="trans-ip-v4"
     protocol="radius-v1"
     transport="trans-ip-v4"
-    open-args="mode=client;dest=127.0.0.1:1813;source=0.0.0.0:0">
+    open-args="mode=client;dest=156.238.98.73:1813;source=0.0.0.0:0;secret=root@123">
   </define>
   
   <define entity="traffic-param" name="call-rate" value="1"></define>
@@ -21,6 +21,8 @@
   <define entity="traffic-param" name="log-stat-period" value="1"></define>
   <define entity="traffic-param" name="log-stat-file" value="../logs/client-stat.csv"></define>
   <define entity="traffic-param" name="call-timeout-ms" value="10000"></define>
+
+
   <define entity="traffic-param" name="display-scenario-stat" value="true"></define>
   <define entity="traffic-param" name="display-protocol-stat" value="true"></define>
   <define entity="traffic-param" name="log-protocol-stat-period" value="5"></define>

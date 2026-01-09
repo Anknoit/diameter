@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <configuration name="Simple Radius TCP/IP Server Conf">
-  <define entity="transport"
-    name="trans-ip-v4"
-    file="libtrans_ip.so"
-    create_function="create_cipio_instance"
-    delete_function="delete_cipio_instance"
-    init-args="type=udp">
-  </define>
+ <define entity="transport"
+  name="trans-ip-v4"
+  file="libtrans_ip.so"
+  create_function="create_cipio_instance"
+  delete_function="delete_cipio_instance"
+  init-args="type=udp">
+</define>
 
-  <define entity="channel"
-    name="trans-ip-v4"
-    protocol="radius-v1"
-    transport="trans-ip-v4"
+<!-- RADIUS CLIENT TABLE -->
+<define entity="radius-client"
+        name="client1"
+        ip="0.0.0.0/0"
+        secret="root@123"></define>
+
+<define entity="channel"
+  name="trans-ip-v4"
+  protocol="radius-v1"
+  transport="trans-ip-v4"
   open-args="mode=server;source=0.0.0.0:1813">
-  </define>
+</define>
+
 
 
   <define entity="traffic-param" name="display-period" value="1"></define>
@@ -22,6 +29,8 @@
   <define entity="traffic-param" name="log-stat-file" value="../logs/server-stat.csv"></define>
 
   <define entity="traffic-param" name="call-timeout-ms" value="10000"></define>
+
+
   <define entity="traffic-param" name="display-scenario-stat" value="true"></define>
   <define entity="traffic-param" name="display-protocol-stat" value="true"></define>
   <define entity="traffic-param" name="log-protocol-stat-period" value="5"></define>

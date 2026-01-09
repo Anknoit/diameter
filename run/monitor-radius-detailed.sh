@@ -3,7 +3,7 @@
 # Detailed RADIUS Packet Viewer (CLI)
 # Shows full packet details with decryption
 
-SHARED_SECRET="testing123"
+SHARED_SECRET="root@123"
 PORT="1813"
 
 echo "============================================"

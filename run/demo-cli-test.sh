@@ -96,7 +96,7 @@ Acct-Session-Time=100,\
 Acct-Input-Octets=1000,\
 Acct-Output-Octets=2000,\
 NAS-Identifier=cli-test-nas" | \
-radclient -x 127.0.0.1:1813 acct testing123 2>&1 | grep -A 20 "Sending\|Received"
+radclient -x 127.0.0.1:1813 acct root@123 2>&1 | grep -A 20 "Sending\|Received"
 
 echo ""
 echo "✅ Request sent!"
@@ -117,7 +117,7 @@ Acct-Session-Time=500,\
 Acct-Input-Octets=5000,\
 Acct-Output-Octets=10000,\
 NAS-Identifier=cli-test-nas" | \
-radclient -x 127.0.0.1:1813 acct testing123 2>&1 | grep -A 20 "Sending\|Received"
+radclient -x 127.0.0.1:1813 acct root@123 2>&1 | grep -A 20 "Sending\|Received"
 
 echo ""
 echo "✅ Request sent!"

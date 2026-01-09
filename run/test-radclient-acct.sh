@@ -3,9 +3,9 @@
 # RADIUS Accounting Test with radclient
 # This script sends accounting requests to the Seagull RADIUS server
 
-RADIUS_SERVER="127.0.0.1"
+RADIUS_SERVER="156.238.98.73"
 RADIUS_PORT="1813"
-SHARED_SECRET="testing123"
+SHARED_SECRET="root@123"
 
 echo "============================================"
 echo "RADIUS Accounting Test with radclient"

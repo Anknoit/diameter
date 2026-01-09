@@ -23,9 +23,9 @@
       <!-- Restore identifier from request -->
       <restore name="IDENTIFIER" entity="Identifier"></restore>
       <restore name="ACCT_SES_ID" entity="Acct-Session-Id"></restore>
-      <!-- Set response authenticator -->
+      <!-- Set response authenticator 
       <set-value name="Authenticator" 
-                 format="FEDCBA9876543210FEDCBA9876543210"></set-value>
+                 format="FEDCBA9876543210FEDCBA9876543210"></set-value>-->
     </action>
     <Message name="Accounting-Response">
       <Attribute name="Acct-Session-Id" value="value_is_replaced"> </Attribute>
@@ -51,9 +51,9 @@
       <!-- Restore identifier from request -->
       <restore name="IDENTIFIER" entity="Identifier"></restore>
       <restore name="ACCT_SES_ID" entity="Acct-Session-Id"></restore>
-      <!-- Set response authenticator -->
+      <!-- Set response authenticator 
       <set-value name="Authenticator" 
-                 format="FEDCBA9876543210FEDCBA9876543210"></set-value>
+                 format="FEDCBA9876543210FEDCBA9876543210"></set-value>-->
     </action>
     <Message name="Accounting-Response">
       <Attribute name="Acct-Session-Id" value="value_is_replaced"> </Attribute>

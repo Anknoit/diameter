@@ -4,7 +4,7 @@
 
 <counter>
   <counterdef name="session-counter" init="0"> </counterdef>
-  <counterdef name="identifier-counter" init="0"> </counterdef>
+  <!-- <counterdef name="identifier-counter" init="0"> </counterdef> -->
 </counter>
 
 <!-- Initialisation Scenario 
@@ -20,20 +20,22 @@
     <action>
       <!-- For each new call, increment the Acct-Session-Id counter -->
       <inc-counter name="session-counter"> </inc-counter>
-      <inc-counter name="identifier-counter"> </inc-counter>
-      <set-value name="Acct-Session-Id" 
-                 format="$(session-counter)"></set-value>
-      <set-value name="Identifier" 
-                 format="$(identifier-counter)"></set-value>
+      <!-- <inc-counter name="identifier-counter"> </inc-counter>-->
+      <!--<set-value name="Acct-Session-Id" 
+                 format="$(session-counter)"></set-value>-->
+     <!-- <set-value name="Identifier" 
+                 format="$(identifier-counter)"></set-value> -->
 
-      <!-- Set authenticator value -->
+      <!-- Set authenticator value 
       <set-value name="Authenticator" 
-                 format="0123456789ABCDEF0123456789ABCDEF"></set-value> 
+                 format="0123456789ABCDEF0123456789ABCDEF"></set-value> -->
 
     </action>
     <Message name="Accounting-Request">
       <Attribute name="Acct-Session-Id" value="value_is_replaced"> </Attribute>
       <!-- 1 stands for Start -->
+
+
       <Attribute name="Acct-Status-Type" value="1"> </Attribute>
       <Attribute name="Acct-Terminate-Cause" value="1"> </Attribute> <!-- Admin-Reset -->
       <Attribute name="NAS-IP-Address" value="2130706433"> </Attribute> <!-- 127.0.0.1 -->
@@ -43,7 +45,7 @@
       <Attribute name="Framed-Protocol" value="1"> </Attribute> <!-- PPP -->
       <Attribute name="Framed-IP-Address" value="2887057256"> </Attribute> <!-- 172.23.17.104 -->
       <Attribute name="Framed-IP-Netmask" value="4294967040"> </Attribute> <!-- 255.255.255.240 -->
-      <Attribute name="NAS-Identifier" value="bgl-cpf-dell-bgl-01"> </Attribute>
+      <!-- <Attribute name="NAS-Identifier" value="bgl-cpf-dell-bgl-01"> </Attribute> -->
       <Attribute name="Acct-Multi-Session-Id" value="Y000000D3BBD4A04C000000D2"> </Attribute>
       <Attribute name="Acct-Authentic" value="1"> </Attribute> <!-- RADIUS -->
       <Attribute name="Acct-Session-Time" value="990"> </Attribute>
@@ -51,6 +53,7 @@
       <Attribute name="Acct-Input-Octets" value="6990"> </Attribute>
       <Attribute name="Acct-Output-Octets" value="7990"> </Attribute>
       <Attribute name="Calling-Station-Id" value="lag-10:3051.148"> </Attribute>
+                <Attribute name="Message-Authenticator" value="computed"> </Attribute>
     </Message>
     <action>
       <store name="ACCT_SES_ID" entity="Acct-Session-Id"></store>
@@ -75,18 +78,18 @@
   <send channel="trans-ip-v4">
     <action>
       <!-- For each new call, increment the Acct-Session-Id counter -->
-      <inc-counter name="identifier-counter"> </inc-counter>
+      <!-- <inc-counter name="identifier-counter"> </inc-counter>
       <set-value name="Identifier" 
-                 format="$(identifier-counter)"></set-value>
+                 format="$(identifier-counter)"></set-value> -->
 
-      <!-- Set authenticator value -->
+      <!-- Set authenticator value 
       <set-value name="Authenticator" 
-                 format="FEDCBA9876543210FEDCBA9876543210"></set-value> 
+                 format="FEDCBA9876543210FEDCBA9876543210"></set-value> -->
 
       <restore name="ACCT_SES_ID" entity="Acct-Session-Id"></restore>
     </action>
     <Message name="Accounting-Request">
-      <Attribute name="Acct-Session-Id" value="value_is_replaced"> </Attribute>
+      <!-- <Attribute name="Acct-Session-Id" value="value_is_replaced"> </Attribute> -->
       <!-- 2 stands for Stop -->
       <Attribute name="Acct-Status-Type" value="2"> </Attribute>
       <Attribute name="Acct-Terminate-Cause" value="1"> </Attribute> <!-- Admin-Reset -->
@@ -97,7 +100,7 @@
       <Attribute name="Framed-Protocol" value="1"> </Attribute> <!-- PPP -->
       <Attribute name="Framed-IP-Address" value="2887057256"> </Attribute> <!-- 172.23.17.104 -->
       <Attribute name="Framed-IP-Netmask" value="4294967040"> </Attribute> <!-- 255.255.255.240 -->
-      <Attribute name="NAS-Identifier" value="bgl-cpf-dell-bgl-01"> </Attribute>
+      <!-- <Attribute name="NAS-Identifier" value="bgl-cpf-dell-bgl-01"> </Attribute> -->
       <Attribute name="Acct-Multi-Session-Id" value="Y000000D3BBD4A04C000000D2"> </Attribute>
       <Attribute name="Acct-Authentic" value="1"> </Attribute> <!-- RADIUS -->
       <Attribute name="Acct-Session-Time" value="1490"> </Attribute> <!-- Increased from Start -->
